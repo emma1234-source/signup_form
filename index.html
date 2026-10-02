@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "sidebar">
+        <img src = "hibiscus.jpg" alt = "a hibiscus flower" id = "sidebar_img">
+        <div id = "logobox">
+            <img src = "odin.png" alt = "odin logo" id = "logo">
+            <p class = "uncial-antiqua-regular">ODIN</p>
+        </div>
+        <div id = "img_credit">
+            <p>Photo by <a href="https://unsplash.com/@rthiemann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Thiemann</a> on <a href="https://unsplash.com/photos/two-pink-hibiscus-flowers-mUFlBFUA6_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        </div>
+    </div>
+    <div id = "main_content">
+        <div id = "main_text">
+            <div id = "main_text_content">
+                <p>
+                    You know you need something in your life to help you realise your deepest dreams!<br>
+                    You <em>know</em> you want to.
+                </p>
+                <p>
+                    Sign up <em>now</em> to get started!
+                </p>
+            </div>
+        </div>
+        <div id = "form_wrapper">
+            <div id = "form_entry">
+                <p>Let's do this!</p>
+                <form id = "sign_up_form" action = "https://httpbin.org/post" method = "post">
+                    <div id = "names">
+                        <div>
+                            <label for = "first_name">FIRST NAME</label>
+                            <input type = "text" id = "first_name" name = "first_name" required>
+                        </div>
+                        <div>
+                            <Label for = "last_name">LAST NAME</Label>
+                            <input type = "text" id = "last_name" name = "last_name" required>
+                        </div>
+                    </div>
+                    <div id = "contact">
+                        <div>
+                            <label for = "email_address">EMAIL</label>
+                            <input type = "email" id = "email_address" name = "email_address" required>
+                        </div>
+                        <div>
+                            <label for = "phone_number">PHONE NUMBER</label>
+                            <input type = "text" id = "phone_number" name = "phone_number" required>
+                        </div>
+                    </div>
+                    <div id = "passwords">
+                        <div>
+                            <label for = "password1">PASSWORD</label>
+                            <input type = "password" id = "password1" name = "password1" required minlength="8">
+                        </div>
+                        <div>
+                            <label for = "password2">CONFIRM PASSWORD</label>
+                            <input type = "password" id = "password2" name = "password2" required minlength="8">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id = "form_submit">
+                <button type = "submit" form = "sign_up_form">Create Account</button>
+                <p id="login_prompt">Already have an account? <a href = "#" id = "login_link">Log in</a></p>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
